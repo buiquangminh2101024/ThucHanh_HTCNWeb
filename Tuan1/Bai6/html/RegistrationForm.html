@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper {
+            height: 700px;
+            aspect-ratio: 11.5/12.7;
+            background-color: rgb(105, 175, 249);
+            margin: 0 auto;
+        }
+        
+        .RegistrationForm {
+            height: 100%;
+            aspect-ratio: 9.5/12.7;
+            background-color: rgb(105, 175, 249);
+            text-align: center;
+            margin: 0 auto;
+            /*****/
+            position: relative;
+            /*****/
+        }
+        
+        .Title {
+            height: 80px;
+            width: 300px;
+            background-color: aqua;
+            border: 1px solid black;
+            border-radius: 20px;
+            box-shadow: 5px 5px 4px;
+            text-align: center;
+            /*****/
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 2%);
+            /*****/
+        }
+
+        table tr td:nth-child(1){
+            width: 175px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="RegistrationForm">
+            <div class="Title">
+                <h1 style="margin: 0;">Jackson</h1>
+                <hr style="margin: 0;" size="5px" color="black">
+                <h1 style="margin: 0;">Electronics</h1>
+            </div>
+            <div style="height: 84px;"></div>
+            <h2 style="margin-top: 35px; margin-bottom: 20px;">Registration Form</h2>
+            <p style="margin-bottom: 0;">Register your Jackson Electronics product here</p>
+            <form action="">
+            <table>
+                <tr>
+                    <td>First Name:</td>
+                    <td  align="left">
+                        <input type="text" size="10" name="First Name">
+                        Last Name:
+                        <input type="text" size="10" name="Last Name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Address #1:</td>
+                    <td align="left">
+                        <input type="text" size="24" name="Address #1">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Address #2:</td>
+                    <td align="left">
+                        <input type="text" size="24" name="Address #2">
+                    </td>
+                </tr>
+                <tr>
+                    <td>City:</td>
+                    <td align="left">
+                        <input type="text" size="14" name="City">
+                        State:
+                        <input type="text" size="1" name="State">
+                        Zip:
+                        <input type="text" size="5" name="Zip">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Country:</td>
+                    <td align="left">
+                        <input type="text" size="14" value="United States" name="Country">
+                    </td>
+                </tr>
+            </table>
+            <hr color="black">
+                <table>
+                    <tr>
+                        <td>Product:</td>
+                        <td align="left">
+                            <select style="width: 120px;" name="Product">
+                                <option value="1">ScanMaster</option>
+                                <option value="2">SiuKay</option>
+                                <option value="3">A-One</option>
+                                <option value="4">Hảo Hảo</option>
+                                <option value="5">Đệ Nhất</option>
+                                <option value="6">Phú Hương</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Date Purchased:</td>
+                        <td align="left">
+                            <input type="text" size="14" name="Date Purchased">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Serial #:</td>
+                        <td align="left">
+                            <input type="text" size="14" name="Serial #">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Used for:</td>
+                        <td align="left">
+                            <input type="radio" name="Used for" value="Home">Home
+                        </td>
+                        <td align="left">
+                            <input type="radio" name="Used for" value="Education Institution">Education Institution
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td align="left">
+                            <input type="radio" name="Used for" value="Business" checked>Business
+                        </td>
+                        <td align="left">
+                            <input type="radio" name="Used for" value="Other">Other
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td align="left">
+                            <input type="radio" name="Used for" value="Goverment">Goverment
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">System (check all that apply):</td>
+                        <td align="left">
+                            <input type="checkbox" name="System" value="Windows">Windows
+                        </td>
+                        <td align="left">
+                            <input type="checkbox" name="System" value="UNIX">UNIX
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            <input type="checkbox" name="System" value="Macintosh">Macintosh
+                        </td>
+                        <td align="left">
+                            <input type="checkbox" name="System" value="Other">Other
+                        </td>
+                    </tr>
+                </table>
+                <hr color="black">
+                <table>
+                    <tr>
+                        <td style="vertical-align: top;">Comments?:</td>
+                        <td><textarea name="Comment" id="" cols="30" rows="7"></textarea></td>
+                    </tr>
+                </table>
+            </form>
+            <input type="button" value="Click to register" name="Click to register">
+            <input type="button" value="Click to cancel" name="Click to cancel">
+        </div>
+    </div>
+</body>
+</html>

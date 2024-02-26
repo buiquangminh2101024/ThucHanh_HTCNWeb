@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper {
+            position: relative;
+            height: 600px;
+            aspect-ratio: 4.5/8.5;
+            border: 1px solid cornflowerblue;
+            padding: 10px;
+        }
+
+        .wrapper > input[type="button"] {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <form action="">
+            <p style="margin-top: 0;">
+                Name<br>
+                <input type="text">
+            </p>
+            <p>
+                Telephone Number:<br>
+                <input type="text">
+            </p>
+            <p>
+                Email:<br>
+                <input type="text">
+            </p>
+            <p>
+                Color:<br>
+                <input type="color" value="#0000ff">
+            </p>
+            <p>
+                Date of Birth:<br>
+                <input type="date" name="bday" id="">
+            </p>
+        </form>
+        <input type="button" value="Submit">
+    </div>
+</body>
+</html>

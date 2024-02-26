@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper{
+            height: 600px;
+            aspect-ratio: 10.7/7.7;
+            margin: 0 auto;
+            border: 2px solid lightskyblue;;
+        }
+        fieldset:nth-child(1) td:nth-child(1){
+            width: 72px;
+        }
+        fieldset:nth-child(2) td:nth-child(1){
+            width: 72px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h1 style="margin-top: 10px;">Contact Us</h1>
+        <fieldset>
+            <legend>Your message:</legend>
+            <form action="">
+                <table>
+                    <tr>
+                        <td>To</td>
+                        <td><input type="text" name="sendTo"></td>
+                    </tr>
+                    <tr>
+                        <td>Your email</td>
+                        <td><input type="text" name="email"></td>
+                    </tr>
+                    <tr>
+                        <td>Message</td>
+                        <td><textarea name="Message" id="" cols="50" rows="17"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>Attach File</td>
+                        <td><input type="file" name="AttachFile" id=""></td>
+                    </tr>
+                </table>
+            </form>
+        </fieldset>
+        <fieldset>
+            <legend>How you found us:</legend>
+            <table>
+                <tr>
+                    <td>How did you hear of us</td>
+                    <td>
+                        <select name="HearFrom" id="">
+                        <option value="Google">Google</option>
+                        <option value="FireFox">FireFox</option>
+                        <option value="Opera">Opera</option>
+                        <option value="MicrosoftEdge">MicrosoftEdge</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Newsletter</td>
+                    <td><input type="checkbox" name="Option" id="">Ensure this box is checked if you would like to receive email updates</td>
+                </tr>
+            </table>
+        </fieldset>
+        <input type="button" value="Send message">
+    </div>
+</body>
+</html>
