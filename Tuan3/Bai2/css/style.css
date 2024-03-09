@@ -1,0 +1,166 @@
+.warpper{
+    margin: 0 auto;
+    height: 700px;
+    aspect-ratio: 11.9/7.6;
+    border: 1px solid black;
+}
+header{
+    height: 17.11%;
+    width: 100%;
+    background-color: rgb(42, 81, 116);
+    display: flex;
+}
+.logo{
+    height: 100%;
+    width: 34.42%;
+    display: flex;
+    color: white;
+}
+.logo img{
+    height: 100%;
+    margin-left: 20px;
+}
+.Title{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.logo h1{
+    margin: 0;
+    margin-left: 10px;
+    letter-spacing: 2px;
+}
+.sub_header{
+    height: 100%;
+    width: 65.58%;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+}
+.find{
+    margin-top: 20px;
+    text-align: right;
+    color: white;
+}
+.find *{
+    background-color: midnightblue;
+    border-color: white;
+    border-style: solid;
+}
+nav{
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+nav li{
+    padding: 15px;
+    background-color: rgb(67, 101, 163);
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.content{
+    height: 77.63%;
+    width: 98%;
+    padding-left: 1%;
+    padding-right: 1%;
+    display: flex;
+}
+.section{
+    height: 100%;
+    width: 68.27%;
+}
+.section>h2{
+    width: 95%;
+    margin-top: 40px;
+    padding-bottom: 20px;
+    border-bottom: 2px dotted black;
+}
+.section .sub_content{
+    display: flex;
+}
+.section form{
+    height: 80%;
+    width: 51.85%;
+}
+form p{
+    margin-bottom: 0;
+    color: rgb(212, 57, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    text-shadow: 2px 2px 4px yellowgreen;
+    letter-spacing: 1px;
+    text-align: justify;
+}
+form .row{
+    display: flex;
+}
+form .cell{
+    margin-top: 20px;
+    width: 50%;
+}
+form .cell:nth-child(1){
+    margin-right: 20px;
+}
+form input[type='button'],input[type='reset']{
+    width: 60px;
+    height: 30px;
+}
+.section .info{
+    height: 80%;
+    width: 48.15%;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+.info h2{
+    width: 100%;
+    margin-top: 15px;
+    padding-bottom: 20px;
+    border-bottom: 2px dotted black;
+}
+.aside{
+    height: 100%;
+    width: 31.73%;
+    position: relative;
+}
+.aside .img{
+    height: 74.58%;
+    width: 75.24%;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: rgb(235, 235, 235);
+    overflow: hidden;
+    position: relative;
+    top: 8.47%;
+}
+.aside .img h2{
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px dotted black;
+}
+.aside .img p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.aside .img p:last-child{
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+}
+footer{
+    height: 5.26%;
+    width: 100% - 10px;
+    padding-left: 10px;
+    background-color: midnightblue;
+    display: flex;
+    align-items: center;
+}
